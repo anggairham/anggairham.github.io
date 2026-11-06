@@ -1,308 +1,778 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="dark">
 <head>
-    <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Angga Irham Stianto</title>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-    <!--     Fonts and icons     -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-    <!-- CSS Files -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
-    <link href="assets/css/custom.css" rel="stylesheet" />
-    <!--  Social tags -->
-    <meta name="keywords" content="web programmer, programmer, frontend, backend, angga, angga irham, angga irham stianto, full stack developer, coding, coffee, eat, sleep, code, repeat">
-    <meta name="description" content="Hello, my name is Angga Irham Stianto and this is my website portfolio">
+  <!-- Primary Meta Tags -->
+  <title>Angga Irham: Full Stack Developer | PHP, Laravel, CodeIgniter, Vue</title>
+  <meta name="title" content="Angga Irham: Full Stack Developer | PHP, Laravel, CodeIgniter, Vue" />
+  <meta name="description" content="Full Stack Developer with 7+ years of experience engineering high-throughput web applications, multi-bank Virtual Account payment gateways, MariaDB & PostgreSQL database clusters, and Proxmox VE virtualization." />
+  <meta name="keywords" content="Angga Irham, Full Stack Developer, PHP, Laravel, CodeIgniter, Vue 3, TypeScript, MariaDB, PostgreSQL, Proxmox VE, Virtual Account, REST API, Semarang, Indonesia" />
+  <meta name="author" content="Angga Irham" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://anggairham.github.io/" />
+  <meta property="og:title" content="Angga Irham: Full Stack Developer | PHP, Laravel, CodeIgniter, Vue" />
+  <meta property="og:description" content="Full Stack Developer with 7+ years of experience engineering enterprise web systems, high-concurrency payment gateways, and scalable database clusters." />
+  <meta property="og:image" content="https://anggairham.github.io/assets/img/anggairham.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://anggairham.github.io/" />
+  <meta property="twitter:title" content="Angga Irham: Full Stack Developer | PHP, Laravel, CodeIgniter, Vue" />
+  <meta property="twitter:description" content="Full Stack Developer with 7+ years of experience engineering enterprise web systems, high-concurrency payment gateways, and scalable database clusters." />
+  <meta property="twitter:image" content="https://anggairham.github.io/assets/img/anggairham.jpg" />
+
+  <!-- Favicon & Touch Icons with Cache Buster -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=6" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=6" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png?v=6" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png?v=6" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png?v=6" />
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest?v=6" />
+  <meta name="theme-color" content="#070913" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            pixel: ['"Silkscreen"', 'monospace'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            neon: {
+              cyan: '#00f0ff',
+              magenta: '#f43f5e',
+              purple: '#a855f7',
+              emerald: '#10b981',
+              amber: '#f59e0b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Pixel Stylesheet -->
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
+<body class="selection:bg-cyan-500/30 selection:text-cyan-200">
+  <!-- CRT Scanlines Overlay (Dark Mode Only) -->
+  <div class="scanlines"></div>
 
-<body class="sidebar-collapse" id="page-top">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="50">
-        <div class="container">
-            <div class="navbar-translate">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top" rel="tooltip" title="I'm a Code Lover" data-placement="bottom">
-                    Angga Irham 
-                </a>
-                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-bar bar1"></span>
-                    <span class="navbar-toggler-bar bar2"></span>
-                    <span class="navbar-toggler-bar bar3"></span>
-                </button>
+  <!-- Retro Pixel Dot Grid -->
+  <div class="pixel-grid"></div>
+
+  <!-- Header / Navbar -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+      <nav class="pixel-box px-5 py-3 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#hero" class="flex items-center gap-3 group">
+          <img src="assets/img/logo.png" alt="Angga Irham" class="w-10 h-10 border-2 border-cyan-500 dark:border-cyan-400 shadow-[2px_2px_0px_#000] group-hover:scale-105 transition-transform" />
+          <div>
+            <div class="font-pixel font-bold text-sm sm:text-base text-slate-900 dark:text-white tracking-wider flex items-center gap-2">
+              ANGGA IRHAM
+              <span class="w-2 h-2 bg-emerald-500 dark:bg-emerald-400 inline-block shadow-[1px_1px_0px_#000]"></span>
             </div>
-            <div class="collapse navbar-collapse justify-content-end" data-nav-image="assets/img/blurred-image-1.jpg">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#page-top">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#section-skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#section-portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow me on Github" data-placement="bottom" href="https://github.com/Anggairham" target="_blank">
-                            <i class="fa fa-github"></i>
-                            <p class="d-lg-none d-xl-none">Github</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="My Linkedin" data-placement="bottom" href="https://www.linkedin.com/in/angga-irham-stianto" target="_blank">
-                            <i class="fa fa-linkedin"></i>
-                            <p class="d-lg-none d-xl-none">Linkedin</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Add me on Facebook" data-placement="bottom" href="https://www.facebook.com/angga.irham.90/" target="_blank">
-                            <i class="fa fa-facebook-square"></i>
-                            <p class="d-lg-none d-xl-none">Facebook</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <div class="text-[11px] text-cyan-700 dark:text-cyan-400 font-pixel tracking-wide">FULL STACK DEVELOPER</div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-2 lg:gap-4 font-pixel text-xs tracking-wider">
+          <a href="#about" class="nav-link px-2 py-1 text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">ABOUT</a>
+          <a href="#pillars" class="nav-link px-2 py-1 text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">ARCHITECTURE</a>
+          <a href="#projects" class="nav-link px-2 py-1 text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">PORTFOLIO</a>
+          <a href="#skills" class="nav-link px-2 py-1 text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">SKILLS</a>
+          <a href="#experience" class="nav-link px-2 py-1 text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">EXPERIENCE</a>
+          <a href="#contact" class="nav-link px-2 py-1 text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">CONTACT</a>
         </div>
-    </nav>
-    <!-- End Navbar -->
-    <div class="wrapper">
-        <div class="section" id="section-about">
-            <div class="container">
-                <div class="media flex-column flex-md-row">
-                    <img class="profile-about mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto" src="assets/img/anggairham.jpg" alt="">
-                    <div class="media-body text-center text-md-left">
-                    <div class="lead">Hello, my name is</div>
-                    <h2 class="mt-0 display-4 font-weight-bold">Angga Irham Stianto</h2>
-                    <div class="mb-3">
-                        I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps. 
-                        <!-- I write about web development on <a class="link-on-bg" href="blog.html">my blog</a> and regularly <a class="link-on-bg" href="talks.html">speak</a> at various web conferences and meetups. Want to know how I may help your project? Check out my project <a class="" href="projects.html">case studies</a> and <a class="" href="resume.html">resume</a>. -->
-                    </div>
-                    <table class="table-about-me">
-                        <tr>
-                            <td>EMAIL :</td>
-                            <td><a href="mailto:anggairham08@gmail.com" class="text-white">anggairham08@gmail.com</a></td>
-                        </tr>
-                        <tr>
-                            <td>EDUCATION :</td>
-                            <td>S1 TEKNIK INFORMATIKA (UNIVERSITAS SEMARANG)</td>
-                        </tr>
-                        <tr>
-                            <td>HOBBY :</td>
-                            <td>eat, sleep, code, repeat</td>
-                        </tr>
-                    </table>
-                    <a class="btn btn-success font-weight-bold" href="mailto:anggairham08@gmail.com">Hire Me</a>
-                    </div>
-                </div>
-            </div>
+
+        <!-- Right Action Buttons -->
+        <div class="flex items-center gap-2">
+
+
+          <!-- Dark/Light Theme Toggle -->
+          <button id="theme-toggle" type="button" aria-label="Toggle Theme" title="Toggle Dark/Light Mode" class="pixel-btn-secondary px-2.5 py-1.5 text-xs">
+            <svg class="w-4 h-4 hidden dark:block text-amber-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <svg class="w-4 h-4 block dark:hidden text-slate-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </button>
+
+          <!-- GitHub Link -->
+          <a href="https://github.com/Anggairham" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="pixel-btn-secondary px-2.5 py-1.5 text-xs">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button id="mobile-menu-btn" type="button" aria-label="Open Navigation Menu" class="md:hidden pixel-btn-secondary px-2.5 py-1.5 text-xs">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
         </div>
-        <div class="section" id="section-skills">
-            <div class="container">
-                <h3 class="title font-weight-bold text-center mb-3">Skills Overview</h3>
-                <div class="mx-auto text-center mb-5 text-secondary">I have more than 1 years' experience building web applications for clients. Below is a quick overview of my main technical skill sets and tools I use. <!-- Want to find out more about my experience? <a href="resume.html">Check out my online resume</a>. -->
-                </div>
-                <div class="separator separator-primary"></div>
-                <div class="mx-auto pt-5">
-                    <div class="row">
-                        <div class="col-12 col-lg-6 mb-5 mb-3 mb-lg-0">
-                            <div class="card card-skills bg-white shadow-sm py-4 px-5">
-                                <img class="card-img-skills img-circle rounded-circle" src="assets/img/frontend-icon.svg">
-                                <h4 class="text-center mb-3 mt-5">Frontend</h4>
-                                <ul class="list-unstyled text-secondary">
-                                    <li class="mb-2"><i class="fa fa-check mr-2 text-primary"></i>Javascript</li>
-                                    <li class="mb-2"><i class="fa fa-check mr-2 text-primary"></i>HTML/CSS</li>
-                                    <li class="mb-2"><i class="fa fa-check mr-2 text-primary"></i>Bootstrap</li>
-                                    <li class="mb-2"><i class="fa fa-check mr-2 text-primary"></i>Jquery</li>
-                                    <li class="mb-2"><i class="fa fa-check mr-2 text-primary"></i>Vue</li>
-                                </ul>                                    
-                            </div><!-- card -->
-                        </div>
-                        
-                        <div class="col-12 col-lg-6 mb-5 mb-3 mb-lg-0">
-                            <div class="card card-skills bg-white shadow-sm py-4 px-5">
-                                <img class="card-img-skills img-circle rounded-circle" src="assets/img/backend-icon.svg">
-                                <h4 class="text-center mb-3 mt-5">Backend</h4>
-                                <ul class="list-unstyled text-secondary">
-                                    <li class="mb-2"><i class="fa fa-check mr-2 text-primary"></i>PHP</li>
-                                    <li class="mb-2"><i class="fa fa-check mr-2 text-primary"></i>Codeigniter</li>
-                                    <li class="mb-2"><i class="fa fa-check mr-2 text-primary"></i>Laravel</li>
-                                    <li class="mb-2"><i class="fa fa-check mr-2 text-primary"></i>Lumen</li>
-                                    <li class="mb-2"><i class="fa fa-check mr-2 text-primary"></i>MySQL</li>
-                                </ul>
-                            </div><!-- card -->
-                        </div>
-                    </div><!--//row-->
-                </div>
-            </div>
-        </div>
-        <div class="section" id="section-portfolio">
-            <div class="container">
-                <h3 class="title text-center">My projects</h3>
-                <div class="mx-auto text-center mb-5 text-secondary">
-                    Below are some of the projects I've worked on.
-                </div>
-                <div class="row mb-5">
-                    <div class="col-12 col-lg-4">
-                        <div class="card rounded-0 border-0 shadow-sm mb-5">
-                            <div class="card-img-container">
-                                <img class="card-img-top rounded-0" src="assets/img/portfolio-1.jpg" alt="">
-                                <a class="card-img-overlay overlay-content" target="_blank" href="#">
-                                    <p class="font-weight-bold">Sistem Informasi PPkM</p>
-                                    <p class="text-justify">Sistem Informasi PPkM is a system that supports research and community service activities.</p>
-                                </a>
-                            </div>
-                            <div class="card-body card-portfolio">
-                                <h5 class="card-title text-truncate text-dark text-center mb-0"><a target="_blank" href="#">Sistem Informasi PPkM</a></h5>
-                            </div>
-                            <div class="card-footer border-0 text-center bg-white">
-                                <ul class="list-inline mb-0 mx-auto">
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Codeigniter</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Bootstrap</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Jquery</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">AdminLTE</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL</span></li>
-                                </ul>
-                            </div>
-                        </div><!--//card-->
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="card rounded-0 border-0 shadow-sm mb-5">
-                            <div class="card-img-container">
-                                <img class="card-img-top rounded-0" src="assets/img/portfolio-2.jpg" alt="">
-                                <a class="card-img-overlay overlay-content" target="_blank" href="#">
-                                    <p class="font-weight-bold">GIS Irigasi</p>
-                                    <p class="text-justify">GIS Irigasi is a geographic information system regarding irrigation.</p>
-                                </a>
-                            </div>
-                            <div class="card-body card-portfolio">
-                                <h5 class="card-title text-truncate text-dark text-center mb-0"><a target="_blank" href="#">GIS Irigasi</a></h5>
-                            </div>
-                            <div class="card-footer border-0 text-center bg-white">
-                                <ul class="list-inline mb-0 mx-auto">
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Codeigniter</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Bootstrap</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Jquery</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Leaflet</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL</span></li>
-                                </ul>
-                            </div>
-                        </div><!--//card-->
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="card rounded-0 border-0 shadow-sm mb-5">
-                            <div class="card-img-container">
-                                <img class="card-img-top rounded-0" src="assets/img/portfolio-3.jpg" alt="">
-                                <a class="card-img-overlay overlay-content" target="_blank" href="#">
-                                    <p class="font-weight-bold">Sistem Informasi KKN</p>
-                                    <p class="text-justify">Sistem Informasi KKN is an information system used to assist KKN activities.</p>
-                                </a>
-                            </div>
-                            <div class="card-body card-portfolio">
-                                <h5 class="card-title text-truncate text-dark text-center mb-0"><a target="_blank" href="#">Sistem Informasi KKN</a></h5>
-                            </div>
-                            <div class="card-footer border-0 text-center bg-white">
-                                <ul class="list-inline mb-0 mx-auto">
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Codeigniter</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Bootstrap</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Jquery</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">AdminLTE</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL</span></li>
-                                </ul>
-                            </div>
-                        </div><!--//card-->
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="card rounded-0 border-0 shadow-sm mb-5">
-                            <div class="card-img-container">
-                                <img class="card-img-top rounded-0" src="assets/img/portfolio-4.jpg" alt="">
-                                <a class="card-img-overlay overlay-content" target="_blank" href="#">
-                                    <p class="font-weight-bold">Made In Blora</p>
-                                    <p class="text-justify">Made In Blora is an ecommerce web that is used to sell original products from Blora.</p>
-                                </a>
-                            </div>
-                            <div class="card-body card-portfolio">
-                                <h5 class="card-title text-truncate text-dark text-center mb-0"><a target="_blank" href="#">Made In Blora</a></h5>
-                            </div>
-                            <div class="card-footer border-0 text-center bg-white">
-                                <ul class="list-inline mb-0 mx-auto">
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Codeigniter</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Bootstrap</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Jquery</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL</span></li>
-                                    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Mobile Apps</span></li>
-                                </ul>
-                            </div>
-                        </div><!--//card-->
-                    </div>
-                </div><!--//row-->
-            <div class="text-center">
-                <a class="btn btn-primary" target="_blank" href="https://github.com/Anggairham">More</a>
-            </div>
-            </div>
-        </div>
-        <div class="section section-contact-us text-center bg-primary text-white">
-            <div class="container">
-                <h5>
-                    Want to hire me, want to cooperate with me, or want to be friend with me?
-                </h5>
-                <h6>
-                    feel free contact me on my social media below
-                </h6>
-                <a class="btn btn-info btn-icon btn-round" target="_blank" href="https://t.me/airham08">
-                    <i class="fa fa-telegram"></i>
-                </a>
-                <a class="btn btn-info btn-icon btn-round" target="_blank" href="https://github.com/Anggairham">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a class="btn btn-info btn-icon btn-round" target="_blank" href="https://www.linkedin.com/in/angga-irham-stianto">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a class="btn btn-info btn-icon btn-round" target="_blank" href="https://www.facebook.com/angga.irham.90/">
-                    <i class="fa fa-facebook-square"></i>
-                </a>
-                <a class="btn btn-info btn-icon btn-round" target="_blank" href="https://www.instagram.com/anggairhams/">
-                    <i class="fa fa-instagram"></i>
-                </a>
-            </div>
-        </div>
-        <footer class="footer footer-default">
-            <div class="container">
-                <div class="text-center">
-                    &copy;
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script> Angga Irham Stianto
-                    <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fanggairham.github.io%2Fwq&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
-                </div>
-            </div>
-        </footer>
+      </nav>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden md:hidden mt-2 pixel-box p-4 flex flex-col gap-2 font-pixel text-xs">
+        <a href="#about" class="mobile-nav-link px-3 py-2 text-slate-800 dark:text-slate-200 hover:bg-cyan-500/20">ABOUT</a>
+        <a href="#pillars" class="mobile-nav-link px-3 py-2 text-slate-800 dark:text-slate-200 hover:bg-cyan-500/20">ARCHITECTURE</a>
+        <a href="#projects" class="mobile-nav-link px-3 py-2 text-slate-800 dark:text-slate-200 hover:bg-cyan-500/20">PORTFOLIO</a>
+        <a href="#skills" class="mobile-nav-link px-3 py-2 text-slate-800 dark:text-slate-200 hover:bg-cyan-500/20">SKILLS</a>
+        <a href="#experience" class="mobile-nav-link px-3 py-2 text-slate-800 dark:text-slate-200 hover:bg-cyan-500/20">EXPERIENCE</a>
+        <a href="#contact" class="mobile-nav-link px-3 py-2 text-slate-800 dark:text-slate-200 hover:bg-cyan-500/20">CONTACT</a>
+      </div>
     </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <!-- Experience Badge -->
+          <div class="inline-flex items-center gap-2 pixel-badge border-emerald-600 dark:border-emerald-400 text-emerald-700 dark:text-emerald-400">
+            <span class="w-2 h-2 bg-emerald-500 dark:bg-emerald-400 animate-pulse"></span>
+            7+ YEARS EXPERIENCE • SYSADMIN & FULL STACK
+          </div>
+
+          <!-- Main Heading -->
+          <div class="space-y-2">
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold font-pixel tracking-wider text-slate-900 dark:text-white leading-tight">
+              ANGGA IRHAM
+            </h1>
+            <p class="text-sm sm:text-base font-pixel text-cyan-700 dark:text-cyan-400 tracking-wide">
+              FULL STACK DEVELOPER & SYSTEMS ADMINISTRATOR
+            </p>
+          </div>
+
+          <!-- Description -->
+          <p class="text-sm sm:text-base text-slate-700 dark:text-slate-300 max-w-2xl leading-relaxed">
+            Full Stack Developer and Systems Administrator with 7+ years of experience engineering scalable web systems and enterprise infrastructure since 2019. Specializing in Proxmox VE virtualization clusters, Nginx reverse proxies, multi-source database replication, and high-concurrency backend services.
+          </p>
+
+          <!-- Action CTAs -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#projects" class="pixel-btn">
+              <span>VIEW PORTFOLIO</span>
+              <span>→</span>
+            </a>
+
+            <button id="copy-email-btn" type="button" class="pixel-btn pixel-btn-secondary">
+              <span>COPY EMAIL</span>
+            </button>
+
+            <a href="#contact" class="pixel-btn pixel-btn-magenta">
+              <span>GET IN TOUCH</span>
+            </a>
+          </div>
+
+          <!-- Competency Badges -->
+          <div class="flex flex-wrap items-center gap-3 pt-4 border-t-2 border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-600 dark:text-slate-400">
+            <span class="pixel-badge border-amber-600 dark:border-amber-400 text-amber-700 dark:text-amber-300">PROXMOX VE & LINUX</span>
+            <span class="pixel-badge border-cyan-600 dark:border-cyan-400 text-cyan-700 dark:text-cyan-300">NGINX & APACHE</span>
+            <span class="pixel-badge border-emerald-600 dark:border-emerald-400 text-emerald-700 dark:text-emerald-300">MARIADB & POSTGRESQL 16</span>
+            <span class="pixel-badge border-purple-600 dark:border-purple-400 text-purple-700 dark:text-purple-300">PHP & LARAVEL 10–13</span>
+          </div>
+        </div>
+
+        <!-- Right Terminal & Profile Box -->
+        <div class="lg:col-span-5 space-y-6">
+          <!-- Retro CRT Terminal Window -->
+          <div class="pixel-terminal">
+            <!-- Header -->
+            <div class="pixel-terminal-header text-white">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-rose-500 border border-black inline-block"></span>
+                <span class="w-3 h-3 bg-amber-500 border border-black inline-block"></span>
+                <span class="w-3 h-3 bg-emerald-500 border border-black inline-block"></span>
+                <span class="ml-2 font-pixel text-xs text-slate-200">SYSADMIN@ANGGA:~#</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <button type="button" data-tab="overview" class="terminal-tab active">TOPOLOGY</button>
+                <button type="button" data-tab="services" class="terminal-tab">SERVICES</button>
+                <button type="button" data-tab="stack" class="terminal-tab">STACK</button>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="p-4 font-mono text-xs text-slate-200 leading-relaxed overflow-x-auto min-h-[220px]">
+              <pre id="terminal-content"><span class="text-emerald-400 font-bold font-pixel">> SYSTEM_TOPOLOGY</span>
+[VIRTUALIZATION] : Proxmox VE (KVM & LXC)
+[WEB SERVERS]    : Nginx Proxy • Apache • SSL
+[CACHING LAYER]  : Redis In-Memory Service
+[DATABASE CORE]  : MariaDB & PostgreSQL 16
+[OS PLATFORMS]   : Linux (Debian & Ubuntu)
+[PAYMENTS]       : Multi-Bank Virtual Accounts</pre>
+              <span class="pixel-cursor"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Competency Metrics Section -->
+  <section class="py-12 border-y-2 border-slate-300 dark:border-slate-800 bg-slate-100/60 dark:bg-slate-950/60 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- Stat 1 -->
+        <div class="pixel-box p-5 space-y-2">
+          <div class="text-xs font-pixel text-cyan-700 dark:text-cyan-400 font-bold">EXPERIENCE</div>
+          <div class="text-xl sm:text-2xl lg:text-3xl font-pixel font-bold text-slate-900 dark:text-white whitespace-nowrap">7+ YRS</div>
+          <div class="text-xs font-mono text-slate-700 dark:text-slate-300">Professional Engineering</div>
+          <div class="text-[11px] font-mono text-slate-500">[Since March 2019]</div>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="pixel-box p-5 space-y-2">
+          <div class="text-xs font-pixel text-emerald-700 dark:text-emerald-400 font-bold">PAYMENT SYSTEMS</div>
+          <div class="text-xl sm:text-2xl lg:text-3xl font-pixel font-bold text-emerald-600 dark:text-emerald-400 whitespace-nowrap">MULTI-BANK</div>
+          <div class="text-xs font-mono text-slate-700 dark:text-slate-300">Virtual Account Gateways</div>
+          <div class="text-[11px] font-mono text-slate-500">[Host-to-Host Integration]</div>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="pixel-box p-5 space-y-2">
+          <div class="text-xs font-pixel text-purple-700 dark:text-purple-400 font-bold">CONCURRENCY</div>
+          <div class="text-xl sm:text-2xl lg:text-3xl font-pixel font-bold text-purple-600 dark:text-purple-400 whitespace-nowrap">HIGH LOAD</div>
+          <div class="text-xs font-mono text-slate-700 dark:text-slate-300">Real-Time Settlement</div>
+          <div class="text-[11px] font-mono text-slate-500">[Peak Registration Volume]</div>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="pixel-box p-5 space-y-2">
+          <div class="text-xs font-pixel text-amber-700 dark:text-amber-400 font-bold">DATABASE & INFRA</div>
+          <div class="text-xl sm:text-2xl lg:text-3xl font-pixel font-bold text-amber-600 dark:text-amber-400 whitespace-nowrap">CLUSTERS</div>
+          <div class="text-xs font-mono text-slate-700 dark:text-slate-300">MariaDB & PostgreSQL 16</div>
+          <div class="text-[11px] font-mono text-slate-500">[Proxmox VE Virtualization]</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Visual -->
+        <div class="lg:col-span-5">
+          <div class="pixel-box p-5 space-y-6">
+            <div class="relative overflow-hidden border-2 border-cyan-500 dark:border-cyan-400 shadow-[3px_3px_0px_#000]">
+              <img src="assets/img/anggairham.jpg" alt="Angga Irham" class="w-full aspect-square object-cover object-center" />
+            </div>
+            <div class="space-y-3 font-mono text-xs text-slate-700 dark:text-slate-300">
+              <div class="flex justify-between pb-2 border-b-2 border-slate-300 dark:border-slate-800">
+                <span class="text-slate-500 dark:text-slate-400 font-pixel text-[11px]">NAME</span>
+                <span class="text-slate-900 dark:text-white font-bold">Angga Irham</span>
+              </div>
+              <div class="flex justify-between pb-2 border-b-2 border-slate-300 dark:border-slate-800">
+                <span class="text-slate-500 dark:text-slate-400 font-pixel text-[11px]">ROLE</span>
+                <span class="text-cyan-700 dark:text-cyan-400 font-bold">Full Stack Developer</span>
+              </div>
+              <div class="flex justify-between pb-2 border-b-2 border-slate-300 dark:border-slate-800">
+                <span class="text-slate-500 dark:text-slate-400 font-pixel text-[11px]">LOCATION</span>
+                <span class="text-slate-900 dark:text-white font-medium">Semarang, Central Java, Indonesia</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-500 dark:text-slate-400 font-pixel text-[11px]">EXPERIENCE</span>
+                <span class="text-emerald-700 dark:text-emerald-400 font-bold">7+ Years (Since Mar 2019)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="pixel-badge border-cyan-600 dark:border-cyan-400 text-cyan-700 dark:text-cyan-400">ABOUT ME</div>
+          <h2 class="text-2xl sm:text-3xl font-bold font-pixel text-slate-900 dark:text-white tracking-wide">
+            ENGINEERING ROBUST, HIGH-THROUGHPUT WEB ECOSYSTEMS.
+          </h2>
+          <p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+            Full Stack Developer with over 7 years of software engineering experience since 2019, including 5+ years as a Core Programmer at Universitas Semarang. I specialize in designing and scaling enterprise web applications with an emphasis on data integrity, high availability, and database performance under peak concurrency.
+          </p>
+          <div class="space-y-2.5 pt-2">
+            <div class="p-3 border-l-4 border-cyan-500 bg-slate-100 dark:bg-slate-900/60 text-xs text-slate-700 dark:text-slate-300 leading-relaxed font-mono">
+              <strong class="text-slate-900 dark:text-white font-pixel text-[11px] block mb-1">ENTERPRISE SCOPE:</strong>
+              Maintaining an active ecosystem of production web applications supporting academic, financial, and administrative operations.
+            </div>
+            <div class="p-3 border-l-4 border-emerald-500 bg-slate-100 dark:bg-slate-900/60 text-xs text-slate-700 dark:text-slate-300 leading-relaxed font-mono">
+              <strong class="text-slate-900 dark:text-white font-pixel text-[11px] block mb-1">DATABASE ARCHITECTURE:</strong>
+              Managing operational databases across MariaDB multi-source replication clusters and PostgreSQL 16, resolving high-volume table lock contention via dynamic partitioning and secondary replica read offloading.
+            </div>
+            <div class="p-3 border-l-4 border-purple-500 bg-slate-100 dark:bg-slate-900/60 text-xs text-slate-700 dark:text-slate-300 leading-relaxed font-mono">
+              <strong class="text-slate-900 dark:text-white font-pixel text-[11px] block mb-1">INFRASTRUCTURE & VIRTUALIZATION:</strong>
+              Co-managing Proxmox VE virtualization clusters and implementing standardized REST API architecture with modern engineering workflows.
+            </div>
+          </div>
+
+          <!-- Highlights -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            <div class="pixel-box p-4 space-y-1">
+              <div class="font-pixel text-xs text-cyan-700 dark:text-cyan-400 font-bold">HIGH-CONCURRENCY DATABASE TUNING</div>
+              <p class="text-xs text-slate-600 dark:text-slate-400">Eliminating table lock contention, dynamic table partitioning, scheduled snapshot aggregation, and read-replica offloading.</p>
+            </div>
+
+            <div class="pixel-box p-4 space-y-1">
+              <div class="font-pixel text-xs text-emerald-700 dark:text-emerald-400 font-bold">DATABASE CLUSTERS & VIRTUALIZATION</div>
+              <p class="text-xs text-slate-600 dark:text-slate-400">Administering operational databases on MariaDB multi-source and PostgreSQL 16, hosted on Proxmox VE clusters.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architectural Pillars Section -->
+  <section id="pillars" class="py-24 border-t-2 border-slate-300 dark:border-slate-800 bg-slate-100/40 dark:bg-slate-950/40 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <div class="pixel-badge border-cyan-600 dark:border-cyan-400 text-cyan-700 dark:text-cyan-400">CORE TECHNICAL DOMAINS</div>
+        <h2 class="text-2xl sm:text-3xl font-bold font-pixel text-slate-900 dark:text-white tracking-wide">ARCHITECTURAL PILLARS & INFRASTRUCTURE</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-400">Technical engineering focus applied in high-throughput enterprise systems.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Pillar 1 -->
+        <div class="pixel-box p-6 space-y-4">
+          <div class="text-xs font-pixel text-purple-700 dark:text-purple-400 font-bold">[01] VIRTUALIZATION</div>
+          <h3 class="text-base font-bold font-pixel text-slate-900 dark:text-white">PROXMOX VE & CLUSTERS</h3>
+          <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+            Co-managing Proxmox VE virtualization clusters supporting production virtual machines (KVM) and LXC containers for enterprise web services and database workloads.
+          </p>
+          <div class="text-[11px] font-pixel text-purple-700 dark:text-purple-400 pt-2 border-t-2 border-slate-300 dark:border-slate-800">
+            PROXMOX VE • KVM • LXC
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="pixel-box p-6 space-y-4">
+          <div class="text-xs font-pixel text-cyan-700 dark:text-cyan-400 font-bold">[02] WEB SERVERS</div>
+          <h3 class="text-base font-bold font-pixel text-slate-900 dark:text-white">NGINX & REVERSE PROXY</h3>
+          <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+            Configuring high-performance Nginx reverse proxies, SSL/TLS certificate automation, HTTP/2 load balancing, and Apache web servers for high availability.
+          </p>
+          <div class="text-[11px] font-pixel text-cyan-700 dark:text-cyan-400 pt-2 border-t-2 border-slate-300 dark:border-slate-800">
+            NGINX • APACHE • SSL/TLS
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="pixel-box p-6 space-y-4">
+          <div class="text-xs font-pixel text-emerald-700 dark:text-emerald-400 font-bold">[03] DATABASE CLUSTERS</div>
+          <h3 class="text-base font-bold font-pixel text-slate-900 dark:text-white">PARTITIONING & REPLICATION</h3>
+          <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+            Administering MariaDB multi-source replication clusters and PostgreSQL 16, resolving query bottlenecks, dynamic table partitioning, and read-replica offloading.
+          </p>
+          <div class="text-[11px] font-pixel text-emerald-700 dark:text-emerald-400 pt-2 border-t-2 border-slate-300 dark:border-slate-800">
+            MARIADB CLUSTERS • PG 16
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="pixel-box p-6 space-y-4">
+          <div class="text-xs font-pixel text-amber-700 dark:text-amber-400 font-bold">[04] BACKEND & GATEWAYS</div>
+          <h3 class="text-base font-bold font-pixel text-slate-900 dark:text-white">MULTI-BANK VIRTUAL ACCOUNT</h3>
+          <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+            Direct integration with multi-bank Virtual Account gateways handling high-concurrency payment settlements, webhook callbacks, and automated financial reconciliation.
+          </p>
+          <div class="text-[11px] font-pixel text-amber-700 dark:text-amber-400 pt-2 border-t-2 border-slate-300 dark:border-slate-800">
+            LARAVEL • CI3 • PAYMENT APIS
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="py-24 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div class="space-y-3">
+          <div class="pixel-badge border-cyan-600 dark:border-cyan-400 text-cyan-700 dark:text-cyan-400">FEATURED PORTFOLIO</div>
+          <h2 class="text-2xl sm:text-3xl font-bold font-pixel text-slate-900 dark:text-white tracking-wide">PRODUCTION SYSTEMS & CASE STUDIES</h2>
+          <p class="text-sm text-slate-600 dark:text-slate-400 max-w-2xl">Large-scale applications engineered and operated in active production environments.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap items-center gap-2">
+          <button type="button" data-filter="all" class="filter-btn active px-3 py-1.5">ALL</button>
+          <button type="button" data-filter="fintech" class="filter-btn px-3 py-1.5">PAYMENT & GATEWAY</button>
+          <button type="button" data-filter="enterprise" class="filter-btn px-3 py-1.5">ENTERPRISE SYSTEM</button>
+          <button type="button" data-filter="laravel-vue" class="filter-btn px-3 py-1.5">LARAVEL & VUE</button>
+        </div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1: High Transaction Payment & Billing -->
+        <div class="project-card pixel-box p-6 flex flex-col justify-between space-y-5" data-category="fintech enterprise">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="pixel-badge border-amber-600 dark:border-amber-400 text-amber-700 dark:text-amber-300 text-[10px]">HIGH CONCURRENCY</span>
+              <span class="text-xs font-pixel text-slate-500 dark:text-slate-400">PROD</span>
+            </div>
+            <h3 class="text-base font-bold font-pixel text-slate-900 dark:text-white">HIGH-CONCURRENCY BILLING & MULTI-BANK VA GATEWAY</h3>
+            <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+              Developed a high-concurrency billing and payment engine processing transactions during peak registration periods. Connected to multi-bank Virtual Account gateways. Eliminated table lock contention through dynamic table partitioning per department and routing read traffic to secondary replicas.
+            </p>
+          </div>
+          <div class="pt-4 border-t-2 border-slate-300 dark:border-slate-800 flex flex-wrap gap-1.5 text-[10px] font-pixel text-slate-700 dark:text-slate-300">
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">PHP & LARAVEL</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">CODEIGNITER 3</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">MARIADB REPLICATION</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">TABLE PARTITIONING</span>
+          </div>
+        </div>
+
+        <!-- Project 2: SPMI Perguruan Tinggi -->
+        <div class="project-card pixel-box p-6 flex flex-col justify-between space-y-5" data-category="enterprise laravel-vue">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="pixel-badge border-cyan-600 dark:border-cyan-400 text-cyan-700 dark:text-cyan-300 text-[10px]">QUALITY ASSURANCE</span>
+              <span class="text-xs font-pixel text-slate-500 dark:text-slate-400">PROD</span>
+            </div>
+            <h3 class="text-base font-bold font-pixel text-slate-900 dark:text-white">HIGHER EDUCATION QUALITY ASSURANCE SYSTEM (SPMI)</h3>
+            <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+              Developed an institutional quality assurance application covering the full continuous improvement cycle: standard definitions, indicator metrics, targets, evidence document uploads, and audit trails. The backend includes verified API routes and automated test suites.
+            </p>
+          </div>
+          <div class="pt-4 border-t-2 border-slate-300 dark:border-slate-800 flex flex-wrap gap-1.5 text-[10px] font-pixel text-slate-700 dark:text-slate-300">
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">LARAVEL 13</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">VUE 3 & TS</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">POSTGRESQL 16</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">REDIS 7</span>
+          </div>
+        </div>
+
+        <!-- Project 3: Anggaran & Perencanaan Belanja -->
+        <div class="project-card pixel-box p-6 flex flex-col justify-between space-y-5" data-category="enterprise laravel-vue">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="pixel-badge border-emerald-600 dark:border-emerald-400 text-emerald-700 dark:text-emerald-300 text-[10px]">FINANCIAL PLANNING</span>
+              <span class="text-xs font-pixel text-slate-500 dark:text-slate-400">PROD</span>
+            </div>
+            <h3 class="text-base font-bold font-pixel text-slate-900 dark:text-white">BUDGET PLANNING & EXPENDITURE MANAGEMENT (E-BUDGETING)</h3>
+            <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+              Engineered the backend for activity planning, itemized budget submissions (RAB), multi-tier financial verification, cash disbursement authorization, and realization reporting (LPJ) across modular controllers and REST routes.
+            </p>
+          </div>
+          <div class="pt-4 border-t-2 border-slate-300 dark:border-slate-800 flex flex-wrap gap-1.5 text-[10px] font-pixel text-slate-700 dark:text-slate-300">
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">LARAVEL 13</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">REST API</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">VUE 3 & PINIA</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">MARIADB</span>
+          </div>
+        </div>
+
+        <!-- Project 4: Academic Career Advancement System -->
+        <div class="project-card pixel-box p-6 flex flex-col justify-between space-y-5" data-category="enterprise laravel-vue">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="pixel-badge border-purple-600 dark:border-purple-400 text-purple-700 dark:text-purple-300 text-[10px]">CAREER MANAGEMENT</span>
+              <span class="text-xs font-pixel text-slate-500 dark:text-slate-400">PROD</span>
+            </div>
+            <h3 class="text-base font-bold font-pixel text-slate-900 dark:text-white">ACADEMIC CAREER ADVANCEMENT & PROMOTION SYSTEM</h3>
+            <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+              Engineered the digital pipeline for academic credit point submissions, functional rank promotions, administrative dossier verification, scoring rubrics, leadership approvals, and automated digital decree issuance, thoroughly covered by automated Vitest and Playwright test suites.
+            </p>
+          </div>
+          <div class="pt-4 border-t-2 border-slate-300 dark:border-slate-800 flex flex-wrap gap-1.5 text-[10px] font-pixel text-slate-700 dark:text-slate-300">
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">LARAVEL 11</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">SANCTUM</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">VUE 3 & VUETIFY</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">VITEST / PLAYWRIGHT</span>
+          </div>
+        </div>
+
+        <!-- Project 5: Penelitian & Pengabdian kepada Masyarakat -->
+        <div class="project-card pixel-box p-6 flex flex-col justify-between space-y-5" data-category="enterprise">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="pixel-badge border-cyan-600 dark:border-cyan-400 text-cyan-700 dark:text-cyan-300 text-[10px]">ACADEMIC GRANTS</span>
+              <span class="text-xs font-pixel text-slate-500 dark:text-slate-400">PROD</span>
+            </div>
+            <h3 class="text-base font-bold font-pixel text-slate-900 dark:text-white">RESEARCH & COMMUNITY SERVICE PLATFORM (LPPM)</h3>
+            <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+              Maintained and scaled the university-wide platform for grant proposal submissions, independent reviewer scoring, grant contract administration, and research publication output reporting.
+            </p>
+          </div>
+          <div class="pt-4 border-t-2 border-slate-300 dark:border-slate-800 flex flex-wrap gap-1.5 text-[10px] font-pixel text-slate-700 dark:text-slate-300">
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">CODEIGNITER 3</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">PHP</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">JAVASCRIPT</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">MYSQL</span>
+          </div>
+        </div>
+
+        <!-- Project 6: Tracer Study Alumni -->
+        <div class="project-card pixel-box p-6 flex flex-col justify-between space-y-5" data-category="enterprise laravel-vue">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="pixel-badge border-rose-600 dark:border-rose-400 text-rose-700 dark:text-rose-300 text-[10px]">ALUMNI ANALYTICS</span>
+              <span class="text-xs font-pixel text-slate-500 dark:text-slate-400">PROD</span>
+            </div>
+            <h3 class="text-base font-bold font-pixel text-slate-900 dark:text-white">ALUMNI TRACER STUDY & ANALYTICS SYSTEM</h3>
+            <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+              Engineered the backend for graduate surveys, survey instrument validation, waiting-time and study-duration aggregation, geographical alumni distribution mapping, and university Single Sign-On (SSO) integration.
+            </p>
+          </div>
+          <div class="pt-4 border-t-2 border-slate-300 dark:border-slate-800 flex flex-wrap gap-1.5 text-[10px] font-pixel text-slate-700 dark:text-slate-300">
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">LARAVEL 10</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">REST API</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">SANCTUM / JWT</span>
+            <span class="px-2 py-0.5 border border-slate-400 dark:border-slate-700 bg-slate-200 dark:bg-slate-900">MYSQL/MARIADB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Stack & Tooling Section -->
+  <section id="skills" class="py-24 border-t-2 border-slate-300 dark:border-slate-800 bg-slate-100/60 dark:bg-slate-950/60 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <div class="pixel-badge border-cyan-600 dark:border-cyan-400 text-cyan-700 dark:text-cyan-400">TECHNICAL ARSENAL</div>
+        <h2 class="text-2xl sm:text-3xl font-bold font-pixel text-slate-900 dark:text-white tracking-wide">LANGUAGES, FRAMEWORKS & TOOLS</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-400">Battle-tested technologies actively used in daily production development and system operations.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Category 1: Backend -->
+        <div class="pixel-box p-6 space-y-4">
+          <h4 class="font-pixel text-xs text-cyan-700 dark:text-cyan-400 font-bold flex items-center gap-2">
+            <span class="w-2 h-2 bg-cyan-600 dark:bg-cyan-400 inline-block"></span> BACKEND
+          </h4>
+          <div class="space-y-2 font-mono text-xs">
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">PHP</span>
+              <span class="text-cyan-700 dark:text-cyan-400 font-pixel text-[10px]">CORE</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">Laravel 10–13</span>
+              <span class="text-cyan-700 dark:text-cyan-400 font-pixel text-[10px]">ADVANCED</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">CodeIgniter 3</span>
+              <span class="text-cyan-700 dark:text-cyan-400 font-pixel text-[10px]">ADVANCED</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">REST API Architecture</span>
+              <span class="text-cyan-700 dark:text-cyan-400 font-pixel text-[10px]">EXPERT</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">Laravel Sanctum & JWT</span>
+              <span class="text-cyan-700 dark:text-cyan-400 font-pixel text-[10px]">ADVANCED</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Frontend -->
+        <div class="pixel-box p-6 space-y-4">
+          <h4 class="font-pixel text-xs text-purple-700 dark:text-purple-400 font-bold flex items-center gap-2">
+            <span class="w-2 h-2 bg-purple-600 dark:bg-purple-400 inline-block"></span> FRONTEND
+          </h4>
+          <div class="space-y-2 font-mono text-xs">
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">JavaScript & TypeScript</span>
+              <span class="text-purple-700 dark:text-purple-400 font-pixel text-[10px]">ADVANCED</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">Vue 3 / Composition</span>
+              <span class="text-purple-700 dark:text-purple-400 font-pixel text-[10px]">ADVANCED</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">Inertia.js & React</span>
+              <span class="text-purple-700 dark:text-purple-400 font-pixel text-[10px]">ADVANCED</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">Tailwind CSS & PrimeVue</span>
+              <span class="text-purple-700 dark:text-purple-400 font-pixel text-[10px]">ADVANCED</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">Bootstrap & jQuery</span>
+              <span class="text-purple-700 dark:text-purple-400 font-pixel text-[10px]">LEGACY/PRO</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Databases -->
+        <div class="pixel-box p-6 space-y-4">
+          <h4 class="font-pixel text-xs text-emerald-700 dark:text-emerald-400 font-bold flex items-center gap-2">
+            <span class="w-2 h-2 bg-emerald-600 dark:bg-emerald-400 inline-block"></span> DATABASES
+          </h4>
+          <div class="space-y-2 font-mono text-xs">
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">MariaDB Multi-Source</span>
+              <span class="text-emerald-700 dark:text-emerald-400 font-pixel text-[10px]">EXPERT</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">PostgreSQL 16</span>
+              <span class="text-emerald-700 dark:text-emerald-400 font-pixel text-[10px]">ADVANCED</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">MySQL Query Tuning</span>
+              <span class="text-emerald-700 dark:text-emerald-400 font-pixel text-[10px]">EXPERT</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">Dynamic Table Partitioning</span>
+              <span class="text-emerald-700 dark:text-emerald-400 font-pixel text-[10px]">ADVANCED</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">Stored Procedures</span>
+              <span class="text-emerald-700 dark:text-emerald-400 font-pixel text-[10px]">ADVANCED</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: Infra & Testing -->
+        <div class="pixel-box p-6 space-y-4">
+          <h4 class="font-pixel text-xs text-amber-700 dark:text-amber-400 font-bold flex items-center gap-2">
+            <span class="w-2 h-2 bg-amber-600 dark:bg-amber-400 inline-block"></span> INFRA & TESTING
+          </h4>
+          <div class="space-y-2 font-mono text-xs">
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">Proxmox VE Virtualization</span>
+              <span class="text-amber-700 dark:text-amber-400 font-pixel text-[10px]">OPERATIONAL</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">Linux, Nginx & Apache</span>
+              <span class="text-amber-700 dark:text-amber-400 font-pixel text-[10px]">ADVANCED</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">Git, GitLab & GitHub</span>
+              <span class="text-amber-700 dark:text-amber-400 font-pixel text-[10px]">ADVANCED</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">PHPUnit & Pest</span>
+              <span class="text-amber-700 dark:text-amber-400 font-pixel text-[10px]">TESTING</span>
+            </div>
+            <div class="p-2 border border-slate-300 dark:border-slate-800 bg-slate-200/50 dark:bg-slate-900 flex justify-between">
+              <span class="text-slate-900 dark:text-white">Vitest & Playwright</span>
+              <span class="text-amber-700 dark:text-amber-400 font-pixel text-[10px]">E2E</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Career Milestone Section -->
+  <section id="experience" class="py-24 relative z-10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="space-y-3 text-center">
+        <div class="pixel-badge border-cyan-600 dark:border-cyan-400 text-cyan-700 dark:text-cyan-400">WORK HISTORY</div>
+        <h2 class="text-2xl sm:text-3xl font-bold font-pixel text-slate-900 dark:text-white tracking-wide">PROFESSIONAL TRACK RECORD</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-400">Proven history of engineering and operating large-scale institutional software systems.</p>
+      </div>
+
+      <div class="space-y-8">
+        <!-- Role 1 -->
+        <div class="pixel-box p-6 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="pixel-badge border-cyan-600 dark:border-cyan-400 text-cyan-700 dark:text-cyan-300">JANUARY 2021 – PRESENT</span>
+            <span class="pixel-badge border-emerald-600 dark:border-emerald-400 text-emerald-700 dark:text-emerald-300">SEMARANG, INDONESIA</span>
+          </div>
+          <h4 class="text-base font-bold font-pixel text-slate-900 dark:text-white">PROGRAMMER: UNIVERSITAS SEMARANG</h4>
+          <ul class="text-xs text-slate-700 dark:text-slate-300 space-y-2 list-disc list-inside leading-relaxed pt-1">
+            <li>Develop and maintain web applications across an enterprise production ecosystem supporting academic, financial, and administrative operations.</li>
+            <li>Engineered high-concurrency billing and payment systems connected to multi-bank Virtual Account gateways for direct tuition settlement.</li>
+            <li>Resolved slow query bottlenecks and table lock contention under extreme transaction volume through dynamic table partitioning per department, scheduled receivables snapshot aggregations, and routing read queries to secondary database replicas.</li>
+            <li>Managed operational databases on MariaDB multi-source replication clusters and PostgreSQL 16 utilizing partial indexing and automated stored procedures.</li>
+            <li>Maintain active service codebase repositories on campus GitLab and actively collaborate on private developer team GitHub repositories.</li>
+            <li>Co-manage Proxmox VE virtualization clusters supporting production virtual machines and containers for campus web applications and database clusters.</li>
+          </ul>
+        </div>
+
+        <!-- Role 2 -->
+        <div class="pixel-box p-6 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="pixel-badge border-purple-600 dark:border-purple-400 text-purple-700 dark:text-purple-300">MARCH 2019 – DECEMBER 2020</span>
+            <span class="pixel-badge border-slate-400 dark:border-slate-500 text-slate-700 dark:text-slate-300">1 YEAR 10 MONTHS</span>
+          </div>
+          <h4 class="text-base font-bold font-pixel text-slate-900 dark:text-white">PROGRAMMER INTERN: UNIVERSITAS SEMARANG</h4>
+          <ul class="text-xs text-slate-700 dark:text-slate-300 space-y-2 list-disc list-inside leading-relaxed pt-1">
+            <li>Developed the academic Research and Community Service management platform (LPPM) supporting grant proposal submissions, reviewer evaluations, and output reporting.</li>
+            <li>Developed the Community Service management platform (KKN) supporting registration, field assignments, and activity administration.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 border-t-2 border-slate-300 dark:border-slate-800 bg-slate-100/60 dark:bg-slate-950/60 relative z-10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="pixel-box p-8 sm:p-12 text-center space-y-8 relative overflow-hidden">
+        <div class="space-y-3 relative z-10">
+          <div class="pixel-badge border-cyan-600 dark:border-cyan-400 text-cyan-700 dark:text-cyan-400">
+            <span>GET IN TOUCH</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold font-pixel text-slate-900 dark:text-white tracking-wide">
+            OPEN FOR TECHNICAL COLLABORATION & ADVISORY
+          </h2>
+          <p class="text-sm text-slate-700 dark:text-slate-300 max-w-xl mx-auto leading-relaxed">
+            Feel free to reach out for web system architecture consulting, high-concurrency database optimization, or software engineering collaborations.
+          </p>
+        </div>
+
+        <!-- Contact Action Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-4 relative z-10">
+          <a href="mailto:anggairham08@gmail.com" class="pixel-btn">
+            <span>EMAIL: anggairham08@gmail.com</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/angga-irham-stianto" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-magenta">
+            <span>LINKEDIN PROFILE</span>
+          </a>
+
+          <a href="https://github.com/Anggairham" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-secondary">
+            <span>GITHUB REPOSITORY</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t-2 border-slate-300 dark:border-slate-800 relative z-10 text-center text-xs font-pixel text-slate-600 dark:text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        © 2026 <span class="text-cyan-700 dark:text-cyan-400">ANGGA IRHAM</span>. ALL RIGHTS RESERVED.
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/Anggairham/anggairham.github.io" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">SOURCE CODE</a>
+        <span>•</span>
+        <a href="#hero" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">BACK TO TOP ↑</a>
+      </div>
+    </div>
+  </footer>
+ 
+
+  <!-- Pixel Toast Notification Element -->
+  <div id="toast-notice" class="pixel-toast flex items-center gap-3">
+    <span class="w-2 h-2 bg-cyan-400 inline-block animate-pulse"></span>
+    <span class="toast-text text-xs text-white">NOTIFICATION</span>
+  </div>
+
+
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
 </body>
-<!--   Core JS Files   -->
-<script src="assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
-<script src="assets/js/core/popper.min.js" type="text/javascript"></script>
-<script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-<!-- Plugin Easing -->
-<script src="assets/js/jquery-easing/jquery.easing.min.js"></script>
-<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script src="assets/js/plugins/bootstrap-switch.js"></script>
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-<script src="assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
-<!-- Share Library etc -->
-<script src="assets/js/plugins/jquery.sharrre.js" type="text/javascript"></script>
-<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-<script src="assets/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
-<script src="assets/js/custom.js?v=1.1.0" type="text/javascript"></script>
-<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </html>

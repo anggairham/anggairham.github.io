@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-pixel: 'Silkscreen', monospace;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --bg-primary: #070913;
+  --bg-secondary: #0c1021;
+  --bg-card: rgba(12, 16, 33, 0.95);
+  --bg-card-hover: rgba(20, 27, 54, 0.98);
+  
+  --pixel-border: #1e293b;
+  --pixel-border-bright: #38bdf8;
+  --pixel-border-magenta: #ec4899;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --neon-cyan: #00f0ff;
+  --neon-cyan-hover: #38bdf8;
+  --neon-magenta: #f43f5e;
+  --neon-green: #10b981;
+  --neon-purple: #a855f7;
+  --neon-amber: #f59e0b;
+  
+  --pixel-shadow: #000000;
+  --box-border: #334155;
+  --badge-bg: rgba(0, 0, 0, 0.5);
+  
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-terminal-bg: #030611;
+  --color-terminal-header: #0f172a;
+  --color-btn-text: #050811;
+}
+
+html.light {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  
+  --pixel-border: #0f172a;
+  --pixel-border-bright: #0284c7;
+  --pixel-border-magenta: #e11d48;
+  
+  --text-main: #0f172a;
+  --text-muted: #334155;
+  --text-dim: #64748b;
+  
+  --neon-cyan: #0284c7;
+  --neon-cyan-hover: #0369a1;
+  --neon-magenta: #e11d48;
+  --neon-green: #059669;
+  --neon-purple: #7c3aed;
+  --neon-amber: #d97706;
+  
+  --pixel-shadow: #0f172a;
+  --box-border: #0f172a;
+  --badge-bg: #f1f5f9;
+  --color-btn-text: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-mono);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  min-height: 100vh;
+  position: relative;
+  font-family: var(--font-mono);
+}
+
+/* Pixel Typography */
+.font-pixel {
+  font-family: var(--font-pixel);
+  letter-spacing: 0.05em;
+}
+
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* CRT Scanlines: Active in Dark Mode Only */
+.scanlines {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 99;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  opacity: 0.45;
+}
+
+html.light .scanlines {
+  display: none !important;
+}
+
+/* Pixel Dot Grid */
+.pixel-grid {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: 
+    radial-gradient(circle at 50% 10%, rgba(56, 189, 248, 0.06) 0%, transparent 60%),
+    radial-gradient(var(--text-dim) 1px, transparent 1px);
+  background-size: 100% 100%, 28px 28px;
+  opacity: 0.35;
+}
+
+html.light .pixel-grid {
+  opacity: 0.18;
+}
+
+/* Chunky Pixel Card & Panels */
+/* Chunky Pixel Card with Multi-Archetype Physics & Hole Clipping */
+.pixel-box {
+  background: var(--bg-card);
+  border: 2px solid var(--box-border);
+  box-shadow: 4px 4px 0px 0px var(--pixel-shadow);
+  transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.4, 1), box-shadow 0.2s ease;
+  position: relative;
+}
+
+
+.pixel-box:hover {
+  box-shadow: 6px 6px 0px 0px var(--neon-cyan);
+}
+/* Chunky 3D Pixel Buttons */
+.pixel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-pixel);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.65rem 1.25rem;
+  background-color: var(--neon-cyan);
+  color: var(--color-btn-text);
+  border: 2px solid var(--pixel-shadow);
+  box-shadow: 3px 3px 0px 0px var(--pixel-shadow);
+  cursor: pointer;
+  transition: all 0.1s ease;
+  user-select: none;
+  text-decoration: none;
+}
+
+.pixel-btn:hover {
+  background-color: var(--neon-cyan-hover);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px 0px var(--pixel-shadow);
+}
+
+.pixel-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px var(--pixel-shadow);
+}
+
+.pixel-btn-secondary {
+  background-color: var(--bg-secondary);
+  color: var(--text-main);
+  border: 2px solid var(--box-border);
+  box-shadow: 3px 3px 0px 0px var(--pixel-shadow);
+}
+
+.pixel-btn-secondary:hover {
+  background-color: var(--bg-card-hover);
+  border-color: var(--neon-cyan);
+  color: var(--neon-cyan);
+}
+
+.pixel-btn-secondary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px var(--pixel-shadow);
+}
+
+
+.pixel-btn-magenta {
+  background-color: var(--neon-magenta);
+  color: var(--color-white);
+  border: 2px solid var(--pixel-shadow);
+  box-shadow: 3px 3px 0px 0px var(--pixel-shadow);
+}
+
+.pixel-btn-magenta:hover {
+  filter: brightness(1.1);
+}
+
+/* Pixel Badge */
+.pixel-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-pixel);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.55rem;
+  border: 2px solid currentColor;
+  box-shadow: 2px 2px 0px 0px var(--pixel-shadow);
+  background: var(--badge-bg);
+}
+
+/* Custom Scrollbar 8-bit */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+  border-left: 2px solid var(--pixel-border);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--neon-cyan);
+  border: 2px solid var(--color-black);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-cyan-hover);
+}
+
+/* Retro CRT Terminal Window */
+.pixel-terminal {
+  background: var(--color-terminal-bg);
+  border: 2px solid var(--neon-cyan);
+  box-shadow: 6px 6px 0px 0px var(--pixel-shadow);
+}
+
+html.light .pixel-terminal {
+  border: 2px solid var(--box-border);
+  box-shadow: 5px 5px 0px 0px var(--pixel-shadow);
+}
+
+.pixel-terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: var(--color-terminal-header);
+  border-bottom: 2px solid var(--neon-cyan);
+  font-family: var(--font-pixel);
+  font-size: 0.75rem;
+}
+
+html.light .pixel-terminal-header {
+  border-bottom: 2px solid var(--box-border);
+}
+
+/* Terminal Tab Styles - Locked contrast & Anti-Disappearing Hover */
+.terminal-tab {
+  padding: 3px 8px;
+  font-family: var(--font-pixel);
+  font-size: 0.7rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.terminal-tab:hover {
+  color: var(--neon-cyan);
+}
+
+.terminal-tab.active {
+  background-color: var(--neon-cyan) !important;
+  color: var(--color-black) !important;
+  border-color: var(--color-black) !important;
+  box-shadow: 2px 2px 0px var(--color-black);
+}
+
+.terminal-tab.active:hover {
+  background-color: var(--neon-cyan-hover) !important;
+  color: var(--color-black) !important;
+}
+
+/* Pixel Filter Buttons */
+
+.filter-btn {
+  font-family: var(--font-pixel);
+  font-size: 0.75rem;
+  border: 2px solid var(--box-border);
+  box-shadow: 2px 2px 0px 0px var(--pixel-shadow);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  color: var(--neon-cyan);
+  border-color: var(--neon-cyan);
+}
+
+.filter-btn.active {
+  background: var(--neon-cyan);
+  color: var(--color-btn-text);
+  border-color: var(--box-border);
+  font-weight: 700;
+  box-shadow: 3px 3px 0px 0px var(--pixel-shadow);
+}
+
+/* Pixel Blinking Cursor */
+.pixel-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  background-color: var(--neon-cyan);
+  animation: blink 0.8s infinite;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+/* Pixel Toast */
+.pixel-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  background: var(--color-terminal-bg);
+  color: var(--color-white);
+  border: 2px solid var(--neon-cyan);
+  box-shadow: 4px 4px 0px 0px var(--color-black);
+  padding: 12px 18px;
+  font-family: var(--font-pixel);
+  transform: translateY(140%);
+  opacity: 0;
+  transition: all 0.2s steps(4);
+}
+.pixel-toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
